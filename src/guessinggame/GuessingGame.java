@@ -20,14 +20,14 @@ public class GuessingGame {
      */
     public static void main(String[] args) {
         Random r = new Random();
-        int guessNum = r.nextInt(100);
+        int guessNum = r.nextInt(20);
         int attempt = 0;
         
         Scanner input = new Scanner(System.in);
         int num;
         boolean correct = false;
         
-        System.out.print("I'm thinking of a number between 0-100. What is the number? ");
+        System.out.print("I'm thinking of a number between 0-20. What is the number? ");
         
         while(correct == false){
             
@@ -39,15 +39,17 @@ public class GuessingGame {
             }
             
             else if(num < guessNum){
-                System.out.print("Nope. Try again: ");
+                System.out.print("Nope. The number is " + guessNum);
+                correct = true;
             }
             
             else if(num > guessNum){
-                System.out.print("Nope. Try again: ");
+                System.out.print("Nope. The number is " + guessNum);
+                correct = true;
             }
         }
         
-        System.out.println("You got it!");
+        System.out.println();
         
     }
     
