@@ -47,7 +47,7 @@ public class GuessingGame {
             }
         }
         
-        System.out.println("You got it!");
+        System.out.println("You got it in " + attempt + " tries!");
         
     }
     
