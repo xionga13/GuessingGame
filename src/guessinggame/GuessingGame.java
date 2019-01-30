@@ -39,11 +39,11 @@ public class GuessingGame {
             }
             
             else if(num < guessNum){
-                System.out.print("Nope. Try again: ");
+                System.out.print("Nope. Try again. Too low : ");
             }
             
             else if(num > guessNum){
-                System.out.print("Nope. Try again: ");
+                System.out.print("Nope. Try again. Too high : ");
             }
         }
         
